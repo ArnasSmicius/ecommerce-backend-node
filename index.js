@@ -1,2 +1,5 @@
+const express = require('express');
+const app = express();
 
-require('./startup/server')();
+require('./startup/server')(app);
+require('./startup/routes')(app);
